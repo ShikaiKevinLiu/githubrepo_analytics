@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pandas = "*"
+tqdm = "*"
+jupyter = "*"
+ipywidgets = "*"
+pytest = "*"
+pgcli = "*"
+psycopg = "*"
+psycopg2-binary = "*"
+psycopg-binary = "*"
+sqlalchemy = "*"
+apache-airflow = "*"
+google-cloud-bigquery = "*"
+boto = "*"
+black = {extras = ["jupyter"], version = "*"}
+db-dtypes = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"

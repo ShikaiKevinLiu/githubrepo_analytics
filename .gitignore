@@ -1,0 +1,6 @@
+.DS_Store 
+tmp/
+**/__pycache__/
+.vscode/
+.pytest_cache/
+**/__init__.py

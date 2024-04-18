@@ -1,0 +1,17 @@
+# Fetches details about a specific repository, including its name, fork count,
+# stargazer count, and topics associated with the repository.
+query RepositoryDetails($owner: String!, $name: String!) {
+  repository(owner: $owner, name: $name) {
+    name
+    forkCount
+    stargazerCount
+    repositoryTopics(first: 10) {
+      edges {
+        node {
+          id
+          url
+        }
+      }
+    }
+  }
+}
