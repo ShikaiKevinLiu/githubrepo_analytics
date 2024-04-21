@@ -19,6 +19,7 @@ google-cloud-bigquery = "*"
 boto = "*"
 black = {extras = ["jupyter"], version = "*"}
 db-dtypes = "*"
+graphistry = "*"
 
 [dev-packages]
 
