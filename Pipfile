@@ -20,6 +20,7 @@ boto = "*"
 black = {extras = ["jupyter"], version = "*"}
 db-dtypes = "*"
 graphistry = "*"
+boto3 = "*"
 
 [dev-packages]
 
