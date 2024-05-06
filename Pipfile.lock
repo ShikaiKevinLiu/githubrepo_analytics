@@ -1421,12 +1421,12 @@
         },
         "graphistry": {
             "hashes": [
-                "sha256:622d76b50e9be2757c1eada5cd06ccfec732c4959c798abbd2c521919f9e08de",
-                "sha256:81aa63d9284a611f736e8f27efbc6d446d8806c8a15b912f44e621585621cf6a"
+                "sha256:1d9ff9fa8b51023c8b8c9af3ba10349ab1bc637c90868b27135bf706b1530e4d",
+                "sha256:2fdc4418603c24b203fa97b5e40694888a9403e2d98659edb838a1d90ed00feb"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.7'",
-            "version": "==0.33.7"
+            "version": "==0.33.8"
         },
         "grpcio": {
             "hashes": [
