@@ -23,6 +23,7 @@ graphistry = "*"
 boto3 = "*"
 pylint = "*"
 tomli = "*"
+dill = "*"
 
 [dev-packages]
 
