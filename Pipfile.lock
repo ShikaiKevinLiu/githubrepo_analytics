@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5371027a4b21fb23b4e5377d8c5800536dfbd1f6cd4976dcdcde121079cae1d9"
+            "sha256": "66045ebe517d67f8e432241f90fd817fc866f87933b528ef1c0092e83a339df0"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -1931,7 +1931,7 @@
                 "sha256:f870204a840a60da0b12273ef34f7051e98c3b5961b61b0c2c1be6dfd64fbcd3",
                 "sha256:ffa75af20b44f8dba823498024771d5ac50620e6915abac414251bd971b4529f"
             ],
-            "markers": "python_version >= '3.9'",
+            "markers": "python_version >= '3.12'",
             "version": "==1.26.4"
         },
         "opentelemetry-api": {
@@ -3295,6 +3295,15 @@
                 "sha256:b79d41a65cfec71285433511b50271b05da3584a1da144a0752e9c621a285289"
             ],
             "version": "==5.2.0"
+        },
+        "tomli": {
+            "hashes": [
+                "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc",
+                "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.7'",
+            "version": "==2.0.1"
         },
         "tomlkit": {
             "hashes": [
