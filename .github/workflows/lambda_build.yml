@@ -3,10 +3,10 @@ name: Build and Deploy Lambda Function
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -19,7 +19,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.11'  # Set up the Python version to match your environment
+        python-version: '3.10'  # Set up the Python version to match your environment
 
     - name: Install dependencies
       run: |
