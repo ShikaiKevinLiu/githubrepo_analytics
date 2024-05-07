@@ -5,7 +5,7 @@ tmp/
 .pytest_cache/
 **/__init__.py
 
-
+*.zip
 **/.terraform*
 *.tfstate
 *.tfstate.*
