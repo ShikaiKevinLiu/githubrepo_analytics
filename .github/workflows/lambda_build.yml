@@ -28,7 +28,7 @@ jobs:
     - name: Package Lambda
       run: |
         cd lambda_function
-        zip -r ../terraform/lambda_function.zip lambda_function.py  # Adjust paths if needed
+        zip -r ./demos/terraform_demo/terraform/lambda_function.zip lambda_function.py  # Adjust paths if needed
 
     - name: Deploy using Terraform
       run: |
