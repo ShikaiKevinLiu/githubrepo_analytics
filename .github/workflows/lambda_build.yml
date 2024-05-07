@@ -32,7 +32,7 @@ jobs:
 
     - name: Deploy using Terraform
       run: |
-        cd terraform
+        cd ./demos/terraform_demo/terraform
         terraform init
         terraform apply -auto-approve
       env:
