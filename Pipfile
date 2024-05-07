@@ -21,6 +21,7 @@ black = {extras = ["jupyter"], version = "*"}
 db-dtypes = "*"
 graphistry = "*"
 boto3 = "*"
+pylint = "*"
 
 [dev-packages]
 
