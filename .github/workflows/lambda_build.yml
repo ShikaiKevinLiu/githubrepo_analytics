@@ -25,6 +25,12 @@ jobs:
     #   run: |
     #     pip install -r lambda_function/requirements.txt  # Adjust path if needed
 
+    - name: List files and hash before build
+      run: |
+        echo "Listing all files and their SHA256 hashes before build:"
+        find . -type f -exec sha256sum {} + | sort
+
+
     - name: Package Lambda
       run: |
         cd ./demos/terraform_demo/lambda_function/
@@ -39,3 +45,8 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_DEFAULT_REGION: 'us-east-1'  # Change to your AWS region
+  
+  - name: List files and hash after build
+      run: |
+        echo "Listing all files and their SHA256 hashes after build:"
+        find . -type f -exec sha256sum {} + | sort
