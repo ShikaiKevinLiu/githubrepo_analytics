@@ -24,6 +24,15 @@ boto3 = "*"
 pylint = "*"
 tomli = "*"
 dill = "*"
+dash = "*"
+dash-cytoscape = "*"
+dash-html-components = "*"
+networkx = "*"
+community = "*"
+matplotlib = "*"
+python-louvain = "*"
+streamlit = "*"
+ipysigma = "*"
 
 [dev-packages]
 
