@@ -16,13 +16,11 @@ def process_alias(alias: str) -> str:
 
 def generate_query(repos: List[Tuple[str, str]]) -> str:
     """
-    生成包含多个仓库查询的GraphQL查询字符串。
+    argument:
+    repos (list of tuple): ('owner', 'name')
 
-    参数:
-    repos (list of tuple): 列表，其中每个元组包含('owner', 'name')。
-
-    返回:
-    str: GraphQL查询字符串。
+    return:
+    str: GraphQL query statment
     """
     query_parts = []
     for i, (owner, name) in enumerate(repos, start=1):

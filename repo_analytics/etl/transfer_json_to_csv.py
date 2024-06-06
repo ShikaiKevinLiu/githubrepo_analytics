@@ -1,4 +1,5 @@
-"""This Script transfers the Repo attributes data(forkcount, topics, etc.) from JSON to CSV format"""
+"""This Script transfers the Repo attributes data(forkcount, topics, etc.) from JSON to CSV format,
+then transfer the data into a network data format"""
 from itertools import combinations
 from collections import defaultdict
 import pandas as pd
@@ -53,18 +54,23 @@ def create_network_data(df: pd.DataFrame) -> pd.DataFrame:
     # Now convert the pair counts into a DataFrame
     network_data = pd.DataFrame(
         [(pair[0], pair[1], count) for pair, count in pair_counts.items()],
-        columns=['topic1', 'topic2', 'edge_count']
+        columns=['Source', 'Target', 'Weight']
     )
     return network_data
 
 
 if __name__ == '__main__':
-     # step 1 combine all JSON files into one large dictionary
-    repo_attributes_data = combine_json_files('tmp/gh_api_data/')
+    
+    years = range(2020, 2024)
+    for year in years:
+        # Step 1: Combine all JSON files for the specified year into one large dictionary
+        repo_attributes_data = combine_json_files('tmp/gh_api_data/', year)
 
-    # step 2 Convert the dictionary to a pandas DataFrame
-    df_repo = dict_to_pandas(repo_attributes_data)
+        # Step 2: Convert the dictionary to a pandas DataFrame
+        df_repo = dict_to_pandas(repo_attributes_data)
 
-    # step 3 Create a network DataFrame from the repository topics
-    network_df = create_network_data(df_repo)
-    network_df.to_csv('tmp/repo_network.csv', index=False)
+        # Step 3: Create a network DataFrame from the repository topics
+        network_df = create_network_data(df_repo)
+        
+        # Step 4: Save the network DataFrame to a CSV file
+        network_df.to_csv(f'tmp/repo_network_{year}.csv', index=False)

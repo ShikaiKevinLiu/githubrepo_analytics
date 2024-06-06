@@ -12,7 +12,7 @@ if __name__ == "__main__":
     credentials = service_account.Credentials.from_service_account_file(CREDENTIAL_PATH)
     client = bigquery.Client(credentials=credentials)
 
-    for yr in tqdm(range(2016, 2024)):
+    for yr in tqdm(range(2020, 2024)): # in production, it should include more years
         # query statm
         query = f"""
             SELECT  repo.url,repo.name, count(repo.url) as url_count, count(repo.name) as name_count

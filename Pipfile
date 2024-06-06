@@ -36,6 +36,7 @@ ipysigma = "*"
 igraph = "*"
 pelote = "*"
 seaborn = "*"
+plotly = "*"
 
 [dev-packages]
 

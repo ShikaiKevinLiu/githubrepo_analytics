@@ -2,6 +2,4 @@ etl:
   GOOGLE_CREDENTIALS_PATH: "/Users/shikailiu/clean-node-420103-6e83908c3a44.json"
   GITHUB_TOKEN_PATH: "/Users/shikailiu/gh_token.json"  # this token is a string, but i put it into a json format, and the key is just called "key"
   GITHUB_API_URL: "https://api.github.com/graphql"
-#   raw_data_path: "data/raw/"
-#   processed_data_path: "data/processed/"
-#   output_data_path: "data/output/"
+  AWS_CREDENTIAL_PATH: "/Users/shikailiu/.aws/credentials.json" # it includes the aws credential and keys
