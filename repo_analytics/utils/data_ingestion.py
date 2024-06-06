@@ -10,6 +10,6 @@ def format_bigquerydata(data: pd.DataFrame)-> pd.DataFrame:
     # rule 1: remove columns with all missing values
 
 
-    # 重命名列名
+    # rename columns names
     data.columns = [col.lower().replace(' ', '_') for col in data.columns]
     return data

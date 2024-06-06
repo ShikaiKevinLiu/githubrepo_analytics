@@ -1,3 +1,4 @@
+# this script is no more needed, but just leave it here before deleting it
 # Fetches details about a specific repository, including its name, fork count,
 # stargazer count, and topics associated with the repository.
 query RepositoryDetails($owner: String!, $name: String!) {

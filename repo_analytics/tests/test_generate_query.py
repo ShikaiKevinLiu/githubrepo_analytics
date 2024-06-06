@@ -1,15 +1,14 @@
 """
 Unit tests for generate_query function
+python -m unittest repo_analytics/tests/test_generate_query.py under root directory
 """
 import unittest
 import sys
 import os
+from repo_analytics.utils.generate_query import generate_query
 print(os.getcwd())
 print(sys.path,"\n")
 print("当前工作目录:", os.getcwd())
-
-from repo_analytics.utils.generate_query import generate_query
-
 #sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 print(os.getcwd())
 

@@ -33,6 +33,9 @@ matplotlib = "*"
 python-louvain = "*"
 streamlit = "*"
 ipysigma = "*"
+igraph = "*"
+pelote = "*"
+seaborn = "*"
 
 [dev-packages]
 
